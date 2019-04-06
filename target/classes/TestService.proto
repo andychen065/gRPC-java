@@ -1,0 +1,8 @@
+syntax = "proto3";  
+option java_multiple_files = true;
+package com.test.grpc;  
+option java_package = "com.test.grpc.service";  
+import "TestModel.proto";  
+service TestRpcService{  
+    rpc sayHello(TestRequest) returns (TestResponse);  
+}  
